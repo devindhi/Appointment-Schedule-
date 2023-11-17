@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="585.0" prefWidth="600.0" style="-fx-background-color: F3CFC7;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.updateController">
+   <children>
+      <Label layoutX="250.0" layoutY="16.0" prefHeight="39.0" prefWidth="116.0" text="Update" textFill="#8a0c0c">
+         <font>
+            <Font name="Britannic Bold" size="26.0" />
+         </font></Label>
+      <Label layoutX="190.0" layoutY="84.0" prefHeight="17.0" prefWidth="55.0" text="Name">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TextField fx:id="customerName" layoutX="245.0" layoutY="80.0" />
+      <RadioButton fx:id="nameRadio" layoutX="169.0" layoutY="186.0" mnemonicParsing="false" text="Name" />
+      <RadioButton fx:id="lastnameRadio" layoutX="170.0" layoutY="220.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="77.0" text="Lastname" />
+      <RadioButton fx:id="dateRadio" layoutX="170.0" layoutY="258.0" mnemonicParsing="false" text="Date" />
+      <RadioButton fx:id="timeRadio" layoutX="343.0" layoutY="186.0" mnemonicParsing="false" text="Time" />
+      <RadioButton fx:id="contactRadio" layoutX="340.0" layoutY="220.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="87.0" text="Contact" />
+      <RadioButton fx:id="emailRadio" layoutX="341.0" layoutY="258.0" mnemonicParsing="false" text="Email" />
+      <Label layoutX="171.0" layoutY="128.0" prefHeight="32.0" prefWidth="183.0" text="Field you want to update">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+      <TextField fx:id="newValue" layoutX="223.0" layoutY="366.0" prefHeight="25.0" prefWidth="155.0" />
+      <Label layoutX="161.0" layoutY="363.0" prefHeight="32.0" prefWidth="55.0" text="New entry" />
+      <Button layoutX="384.0" layoutY="366.0" mnemonicParsing="false" onAction="#handleSaveButtonAction" prefHeight="25.0" prefWidth="41.0" text="Save" />
+      <Button layoutX="247.0" layoutY="425.0" mnemonicParsing="false" onAction="#switchToScene2" text="Main menu" />
+      <RadioButton fx:id="typeRadio" layoutX="170.0" layoutY="293.0" mnemonicParsing="false" text="Type" />
+      <Separator layoutX="6.0" layoutY="58.0" prefHeight="2.0" prefWidth="588.0" />
+      <ImageView fitHeight="156.0" fitWidth="183.0" layoutX="24.0" layoutY="404.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../download.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
